@@ -59,7 +59,7 @@
     "plotly.js": "^1.41.3",
     "prop-types": "^15.6.2",
     "react": "^15.6.2",
-    "react-bootstrap": "^0.31.1",
+    "react-bootstrap": "^0.32.4",
     "react-dom": "^15.6.2",
     "react-input-autosize": "^2.0.1",
     "react-loader": "^2.4.5",
