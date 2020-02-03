@@ -18,8 +18,7 @@ var Home = createReactClass({
         <Row>
           <Col md={6}>
             <Jumbotron>
-              <span className='logo' />
-              <h1 className='logo-text wrap'>Measure Mate!</h1>
+              <h1 className='logo-text wrap'>Yardstick!</h1>
               <p className='logo-slogan-text'>A tool to track maturity assessments for your team.</p>
             </Jumbotron>
           </Col>

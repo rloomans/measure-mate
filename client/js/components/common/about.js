@@ -18,7 +18,7 @@ var About = createReactClass({
           <Col md={3} />
           <Col md={6}>
             <Jumbotron>
-              <p className='logo-slogan-text'>This site is based on the <a className='logo-text' href='https://github.com/mvillis/measure-mate'>Measure Mate</a> project.</p>
+              <p className='logo-slogan-text'>This site is based on the <a className='logo-text' href='https://github.com/rloomans/measure-mate'>Measure Mate</a> project.</p>
             </Jumbotron>
             <Jumbotron>
               <span className='logo' />

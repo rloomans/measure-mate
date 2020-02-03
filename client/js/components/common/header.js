@@ -28,7 +28,7 @@ var Header = createReactClass({
           <Navbar.Header>
             <Navbar.Brand>
               <Link to='/' title='Home'>
-                Measure Mate
+                Yardstick
               </Link>
             </Navbar.Brand>
             <Navbar.Toggle />

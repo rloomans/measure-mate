@@ -18,7 +18,7 @@ describe('About Component', function () {
 
     expect(node.text())
       .to
-      .contain('Measure Mate')
+      .contain('Yardstick')
   })
 
   it('contains slogan text', function () {
