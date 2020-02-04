@@ -14,11 +14,15 @@ describe('About Component', function () {
 
     expect(node.attr('href'))
       .to
-      .contain('https://github.com/mvillis/measure-mate')
+      .contain('https://github.com/')
+
+    expect(node.attr('href'))
+      .to
+      .contain('/measure-mate')
 
     expect(node.text())
       .to
-      .contain('Yardstick')
+      .contain('Measure Mate')
   })
 
   it('contains slogan text', function () {
