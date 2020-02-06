@@ -401,7 +401,7 @@
     source-map-support "^0.5.7"
     tslib "^1.9.3"
 
-"@snyk/update-notifier@^2.5.1-rc1":
+"@snyk/update-notifier@^2.5.1-rc2":
   version "2.5.1-rc2"
   resolved "https://registry.yarnpkg.com/@snyk/update-notifier/-/update-notifier-2.5.1-rc2.tgz#14bf816114b5698a255289d7170157f254202fad"
   integrity sha512-dlled3mfpnAt3cQb5hxkFiqfPCj4Yk0xV8Yl5P8PeVv1pUmO7vI4Ka4Mjs4r6CYM5f9kZhviFPQQcWOIDlMRcw==
@@ -2507,9 +2507,9 @@ camelcase@^5.0.0, camelcase@^5.3.1:
   integrity sha512-L28STB170nwWS63UjtlEOE3dldQApaJXZkOI1uMFfzf3rRuPegHaHesyee+YxQ+W6SvRDQV6UrdOdRiR153wJg==
 
 caniuse-lite@^1.0.30000844, caniuse-lite@^1.0.30001020, caniuse-lite@^1.0.30001023:
-  version "1.0.30001023"
-  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001023.tgz#b82155827f3f5009077bdd2df3d8968bcbcc6fc4"
-  integrity sha512-C5TDMiYG11EOhVOA62W1p3UsJ2z4DsHtMBQtjzp3ZsUglcQn62WOUgW0y795c7A5uZ+GCEIvzkMatLIlAsbNTA==
+  version "1.0.30001025"
+  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001025.tgz#30336a8aca7f98618eb3cf38e35184e13d4e5fe6"
+  integrity sha512-SKyFdHYfXUZf5V85+PJgLYyit27q4wgvZuf8QTOk1osbypcROihMBlx9GRar2/pIcKH2r4OehdlBr9x6PXetAQ==
 
 canvas-fit@^1.5.0:
   version "1.5.0"
@@ -3482,12 +3482,12 @@ d3-force@^1.0.6:
     d3-quadtree "1"
     d3-timer "1"
 
-d3-hierarchy@^1.1.8:
+d3-hierarchy@^1.1.9:
   version "1.1.9"
   resolved "https://registry.yarnpkg.com/d3-hierarchy/-/d3-hierarchy-1.1.9.tgz#2f6bee24caaea43f8dc37545fa01628559647a83"
   integrity sha512-j8tPxlqh1srJHAtxfvOUwKNYJkQuBFdM1+JAUfq6xqH5eAqf93L7oG1NVqDa4CpFZNvnNKtCYEUC8KY9yEn9lQ==
 
-d3-interpolate@1:
+d3-interpolate@^1.4.0:
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/d3-interpolate/-/d3-interpolate-1.4.0.tgz#526e79e2d80daa383f9e0c1c1c7dcc0f0583e987"
   integrity sha512-V9znK0zc3jOPV4VD2zZn0sDhZU3WAE2bmlxdIwwQPPzPjvyLkd8B3JUVdS1IDUFDkWZ72c9qnv1GK2ZagTZ8EA==
@@ -4078,9 +4078,9 @@ ee-first@1.1.1:
   integrity sha1-WQxhFWsK4vTwJVcyoViyZrxWsh0=
 
 electron-to-chromium@^1.3.341, electron-to-chromium@^1.3.47:
-  version "1.3.344"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.344.tgz#f1397a633c35e726730c24be1084cd25c3ee8148"
-  integrity sha512-tvbx2Wl8WBR+ym3u492D0L6/jH+8NoQXqe46+QhbWH3voVPauGuZYeb1QAXYoOAWuiP2dbSvlBx0kQ1F3hu/Mw==
+  version "1.3.345"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.345.tgz#2569d0d54a64ef0f32a4b7e8c80afa5fe57c5d98"
+  integrity sha512-f8nx53+Z9Y+SPWGg3YdHrbYYfIJAtbUjpFfW4X1RwTZ94iUG7geg9tV8HqzAXX7XTNgyWgAFvce4yce8ZKxKmg==
 
 element-size@^1.1.1:
   version "1.1.1"
@@ -4344,9 +4344,9 @@ escodegen@1.8.x:
     source-map "~0.2.0"
 
 escodegen@1.x.x, escodegen@^1.11.1, escodegen@^1.6.1:
-  version "1.13.0"
-  resolved "https://registry.yarnpkg.com/escodegen/-/escodegen-1.13.0.tgz#c7adf9bd3f3cc675bb752f202f79a720189cab29"
-  integrity sha512-eYk2dCkxR07DsHA/X2hRBj0CFAZeri/LyDMc0C8JT1Hqi6JnVpMhJ7XFITbb0+yZS3lVkaPL2oCkZ3AVmeVbMw==
+  version "1.14.1"
+  resolved "https://registry.yarnpkg.com/escodegen/-/escodegen-1.14.1.tgz#ba01d0c8278b5e95a9a45350142026659027a457"
+  integrity sha512-Bmt7NcRySdIfNPfU2ZoXDrrXsG9ZjvDxcAlMfDUgRBjLOWTuIACXPBFJH7Z+cLb40JeQco5toikyc9t9P8E9SQ==
   dependencies:
     esprima "^4.0.1"
     estraverse "^4.2.0"
@@ -4490,9 +4490,9 @@ eslint-plugin-promise@^4.2.1, eslint-plugin-promise@~4.2.1:
   integrity sha512-VoM09vT7bfA7D+upt+FjeBO5eHIJQBUWki1aPvB+vbNiHS3+oGIJGIeyBtKQTME6UPXXy3vV07OL1tHd3ANuDw==
 
 eslint-plugin-react@^7.18.2:
-  version "7.18.2"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-react/-/eslint-plugin-react-7.18.2.tgz#83d52cd783524cb5f6616e029c892ec08ee59e23"
-  integrity sha512-6m1zFCSB8OKVIVyGipz1TJxVuNfgvbbUa7O9fxqyyT0b15tB2X/rxMNCGQv3LTD4XOKmG/ONr52FZHur0OKFkg==
+  version "7.18.3"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-react/-/eslint-plugin-react-7.18.3.tgz#8be671b7f6be095098e79d27ac32f9580f599bc8"
+  integrity sha512-Bt56LNHAQCoou88s8ViKRjMB2+36XRejCQ1VoLj716KI1MoE99HpTVvIThJ0rvFmG4E4Gsq+UgToEjn+j044Bg==
   dependencies:
     array-includes "^3.1.1"
     doctrine "^2.1.0"
@@ -5576,7 +5576,7 @@ gl-matrix@^3.0.0:
   resolved "https://registry.yarnpkg.com/gl-matrix/-/gl-matrix-3.1.0.tgz#f5b2de17d8fed95a79e5025b10cded0ab9ccbed0"
   integrity sha512-526NA+3EA+ztAQi0IZpSWiM0fyQXIp7IbRvfJ4wS/TjjQD0uv0fVybXwwqqSOlq33UckivI0yMDlVtboWm3k7A==
 
-gl-mesh3d@^2.2.0:
+gl-mesh3d@^2.3.0:
   version "2.3.0"
   resolved "https://registry.yarnpkg.com/gl-mesh3d/-/gl-mesh3d-2.3.0.tgz#6c69a312eeed37b01716732bec0fb15300871fdb"
   integrity sha512-iKx3v0xB/6Kej+GpMHhxzW6ziqiIjp6WOyAbuXvBRN9P5iIgzifgBYnDd1mYmCLWGmf85MCki/FvD223BOYFxg==
@@ -5597,7 +5597,7 @@ gl-mesh3d@^2.2.0:
     simplicial-complex-contour "^1.0.0"
     typedarray-pool "^1.1.0"
 
-gl-plot2d@^1.4.2:
+gl-plot2d@^1.4.3:
   version "1.4.3"
   resolved "https://registry.yarnpkg.com/gl-plot2d/-/gl-plot2d-1.4.3.tgz#344354df70272fa7a6a134bca3d1fb67a5d6d418"
   integrity sha512-Ei6WC/SzQ7/qld8MMv7sWrFSdkq8/n7Xmdvj7sbwUkgsJirfknKfeq4DCwaMn9vD2rHOLmdT0NMW+HPrLKSeWQ==
@@ -5610,10 +5610,10 @@ gl-plot2d@^1.4.2:
     glslify "^7.0.0"
     text-cache "^4.2.1"
 
-gl-plot3d@^2.3.0:
-  version "2.4.1"
-  resolved "https://registry.yarnpkg.com/gl-plot3d/-/gl-plot3d-2.4.1.tgz#5ded9edbb81faef0a6908c6e71ffec23f9bd1a0e"
-  integrity sha512-Xm2VmZL7re85KADU1FBj6qMVLgb3jL1RcoUuQ96BgFJp9I0YiVwA4kCxK9asFhE0I2/J0PAXDtSmqbafvAV9Tw==
+gl-plot3d@^2.4.2:
+  version "2.4.3"
+  resolved "https://registry.yarnpkg.com/gl-plot3d/-/gl-plot3d-2.4.3.tgz#521237ade943446fc6bd4f55959fe54c15b08fcf"
+  integrity sha512-CNLB48l1L0EFmf27CvsQzSIqMVDdXeuj/WZeKRHutmx+IeeJF1ueIhYZYzhhTFd5x+/vrVc3fzis33PthTlItQ==
   dependencies:
     "3d-view" "^2.0.0"
     a-big-triangle "^1.0.3"
@@ -5625,7 +5625,7 @@ gl-plot3d@^2.3.0:
     gl-spikes3d "^1.0.9"
     glslify "^7.0.0"
     has-passive-events "^1.0.0"
-    is-mobile "^2.1.0"
+    is-mobile "^2.2.0"
     mouse-change "^1.4.0"
     mouse-event-offset "^3.0.2"
     mouse-wheel "^1.2.0"
@@ -6440,9 +6440,9 @@ gulplog@^1.0.0:
     glogg "^1.0.0"
 
 handlebars@^4.0.1:
-  version "4.7.2"
-  resolved "https://registry.yarnpkg.com/handlebars/-/handlebars-4.7.2.tgz#01127b3840156a0927058779482031afe0e730d7"
-  integrity sha512-4PwqDL2laXtTWZghzzCtunQUTLbo31pcCJrd/B/9JP8XbhVzpS5ZXuKqlOzsd1rtcaLo4KqAn8nl8mkknS4MHw==
+  version "4.7.3"
+  resolved "https://registry.yarnpkg.com/handlebars/-/handlebars-4.7.3.tgz#8ece2797826886cf8082d1726ff21d2a022550ee"
+  integrity sha512-SRGwSYuNfx8DwHD/6InAPzD6RgeruWLT+B8e8a7gGs8FWgHzlExpTFMEq2IA6QpAfOClpKHy6+8IqTjeBCu6Kg==
   dependencies:
     neo-async "^2.6.0"
     optimist "^0.6.1"
@@ -7257,10 +7257,10 @@ is-installed-globally@^0.1.0:
     global-dirs "^0.1.0"
     is-path-inside "^1.0.0"
 
-is-mobile@^2.1.0:
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/is-mobile/-/is-mobile-2.1.0.tgz#4c0cab72f3358dd9986007389b30729fae80da0b"
-  integrity sha512-M5OhlZwh+aTlmRUvDg0Wq3uWVNa+w4DyZ2SjbrS+BhSLu9Po+JXHendC305ZEu+Hh7lywb19Zu4kYXu3L1Oo8A==
+is-mobile@^2.1.0, is-mobile@^2.2.0:
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/is-mobile/-/is-mobile-2.2.0.tgz#72b19ab033deb0fd15a2d00a23b9b1003f8fa5d9"
+  integrity sha512-K0DmUqaZqYl6M8ej536uJYAQaBkx+qWph7xl1KRBr31UiGUT0MoFWUoqnIxzXnIeolnK8bkxtKXkZNL6HfSHhQ==
 
 is-negated-glob@^1.0.0:
   version "1.0.0"
@@ -8923,7 +8923,16 @@ ndarray@^1.0.11, ndarray@^1.0.13, ndarray@^1.0.14, ndarray@^1.0.15, ndarray@^1.0
     iota-array "^1.0.0"
     is-buffer "^1.0.2"
 
-needle@^2.2.1, needle@^2.2.4, needle@^2.4.0:
+needle@^2.2.1, needle@^2.2.4:
+  version "2.3.2"
+  resolved "https://registry.yarnpkg.com/needle/-/needle-2.3.2.tgz#3342dea100b7160960a450dc8c22160ac712a528"
+  integrity sha512-DUzITvPVDUy6vczKKYTnWc/pBZ0EnjMJnQ3y+Jo5zfKFimJs7S3HFCxCRZYB9FUZcrzUQr3WsmvZgddMEIZv6w==
+  dependencies:
+    debug "^3.2.6"
+    iconv-lite "^0.4.4"
+    sax "^1.2.4"
+
+needle@^2.4.0:
   version "2.4.0"
   resolved "https://registry.yarnpkg.com/needle/-/needle-2.4.0.tgz#6833e74975c444642590e15a750288c5f939b57c"
   integrity sha512-4Hnwzr3mi5L97hMYeNl8wRW/Onhy4nUKR/lVemJ8gJedxxUyBLm9kkrDColJvoSfwi0jCNhD+xCdOtiGDQiRZg==
@@ -9020,9 +9029,9 @@ node-pre-gyp@*:
     tar "^4.4.2"
 
 node-releases@^1.1.47:
-  version "1.1.47"
-  resolved "https://registry.yarnpkg.com/node-releases/-/node-releases-1.1.47.tgz#c59ef739a1fd7ecbd9f0b7cf5b7871e8a8b591e4"
-  integrity sha512-k4xjVPx5FpwBUj0Gw7uvFOTF4Ep8Hok1I6qjwL3pLfwe7Y0REQSAqOwwv9TWBCUtMHxcXfY4PgRLRozcChvTcA==
+  version "1.1.48"
+  resolved "https://registry.yarnpkg.com/node-releases/-/node-releases-1.1.48.tgz#7f647f0c453a0495bcd64cbd4778c26035c2f03a"
+  integrity sha512-Hr8BbmUl1ujAST0K0snItzEA5zkJTQup8VNTKNfT6Zw8vTJkIiagUPNfxHmgDOyfFYNfKAul40sD0UEYTvwebw==
   dependencies:
     semver "^6.3.0"
 
@@ -9980,9 +9989,9 @@ planar-graph-to-polyline@^1.0.0:
     uniq "^1.0.0"
 
 plotly.js@^1.52.1:
-  version "1.52.1"
-  resolved "https://registry.yarnpkg.com/plotly.js/-/plotly.js-1.52.1.tgz#1f80b8fb559c542fd40741c9aee6555f41245f6f"
-  integrity sha512-GLNwAu20zwRZrfjrSRUZHXyDulDRh1yfPBV5SLqy5AdGefb6CK2QCBbMcGlhV2P14oJwQ8vd1wqTZVZE9xQ9Rw==
+  version "1.52.2"
+  resolved "https://registry.yarnpkg.com/plotly.js/-/plotly.js-1.52.2.tgz#c4511caf457b95a07a6cac4b5a4d0591483a3b15"
+  integrity sha512-EZHr2ekxVNjucmNhku+JiLFoLV1wH6gW15T/6SFqtHFMvJZY4HeZogtRUPTLijXBPfusMWxxIKEDTzlMOLXajQ==
   dependencies:
     "@plotly/d3-sankey" "0.7.2"
     "@plotly/d3-sankey-circular" "0.33.1"
@@ -9997,8 +10006,8 @@ plotly.js@^1.52.1:
     country-regex "^1.1.0"
     d3 "^3.5.12"
     d3-force "^1.0.6"
-    d3-hierarchy "^1.1.8"
-    d3-interpolate "1"
+    d3-hierarchy "^1.1.9"
+    d3-interpolate "^1.4.0"
     delaunay-triangulate "^1.1.6"
     es6-promise "^3.0.2"
     fast-isnumeric "^1.1.3"
@@ -10008,9 +10017,9 @@ plotly.js@^1.52.1:
     gl-heatmap2d "^1.0.5"
     gl-line3d "^1.1.11"
     gl-mat4 "^1.2.0"
-    gl-mesh3d "^2.2.0"
-    gl-plot2d "^1.4.2"
-    gl-plot3d "^2.3.0"
+    gl-mesh3d "^2.3.0"
+    gl-plot2d "^1.4.3"
+    gl-plot3d "^2.4.2"
     gl-pointcloud2d "^1.0.2"
     gl-scatter3d "^1.2.2"
     gl-select-box "^1.0.3"
@@ -10021,6 +10030,7 @@ plotly.js@^1.52.1:
     glslify "^7.0.0"
     has-hover "^1.0.1"
     has-passive-events "^1.0.0"
+    is-mobile "^2.1.0"
     mapbox-gl "1.3.2"
     matrix-camera-controller "^2.1.3"
     mouse-change "^1.4.0"
@@ -10574,9 +10584,9 @@ react-lifecycles-compat@^3.0.4:
   integrity sha512-fBASbA6LnOU9dOU2eW7aQ8xmYBSXUIWr+UmF9b1efZBazGNO+rcXT/icdKnYm2pTwcRylVUYwW7H1PHfLekVzA==
 
 react-loader@^2.4.6:
-  version "2.4.6"
-  resolved "https://registry.yarnpkg.com/react-loader/-/react-loader-2.4.6.tgz#2ed74a23df992d9dbbbcc827b54a39150693e11e"
-  integrity sha512-z69iu/eq+LdBOGhMgQLZi3Q7Yov32PGiXyIAqHlwbN2oMwRZC+Rqw9XB0sCAcw6cR4H/Rg0nQlcQ5KtyThvl8A==
+  version "2.4.7"
+  resolved "https://registry.yarnpkg.com/react-loader/-/react-loader-2.4.7.tgz#729abe746155456a954a97ff830aff0d6b05f2a9"
+  integrity sha512-pNW5xoSt0Q7HdmQh/EaIeeFbG0Ii74y6Le8gPdDyWyEFNgCiY1NcreQxMioQGjQ4Jo4EenQGKN/qMbxW+dpZkQ==
   dependencies:
     create-react-class "^15.5.2"
     prop-types "^15.5.8"
@@ -10608,9 +10618,9 @@ react-overlays@^0.7.4:
     warning "^3.0.0"
 
 react-overlays@^2.1.0:
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/react-overlays/-/react-overlays-2.1.0.tgz#3671cadab085a519c90a51b9b1402a70281e31d4"
-  integrity sha512-tHPGTZosbQSo82yb9x4YCsmJJtspKvAPL5kXVnyoB2Z5UoAU3VetIuh2VblfVT408us5nLJd9uDtwI3xWDHS6w==
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/react-overlays/-/react-overlays-2.1.1.tgz#ffe2090c4a10da6b8947a1c7b1a67d0457648a0d"
+  integrity sha512-gaQJwmb8Ij2IGVt4D1HmLtl4A0mDVYxlsv/8i0dHWK7Mw0kNat6ORelbbEWzaXTK1TqMeQtJw/jraL3WOADz3w==
   dependencies:
     "@babel/runtime" "^7.4.5"
     "@restart/hooks" "^0.3.12"
@@ -11301,9 +11311,9 @@ resolve@^0.6.1:
   integrity sha1-3ZV5gufnNt699TtYpN2RdUV13UY=
 
 resolve@^1.0.0, resolve@^1.1.0, resolve@^1.1.4, resolve@^1.1.5, resolve@^1.1.6, resolve@^1.1.7, resolve@^1.10.0, resolve@^1.10.1, resolve@^1.11.0, resolve@^1.12.0, resolve@^1.13.1, resolve@^1.14.2, resolve@^1.3.2, resolve@^1.4.0:
-  version "1.15.0"
-  resolved "https://registry.yarnpkg.com/resolve/-/resolve-1.15.0.tgz#1b7ca96073ebb52e741ffd799f6b39ea462c67f5"
-  integrity sha512-+hTmAldEGE80U2wJJDC1lebb5jWqvTYAfm3YZ1ckk1gBr0MnCqUKlwK1e+anaFljIl+F5tR5IoZcm4ZDA1zMQw==
+  version "1.15.1"
+  resolved "https://registry.yarnpkg.com/resolve/-/resolve-1.15.1.tgz#27bdcdeffeaf2d6244b95bb0f9f4b4653451f3e8"
+  integrity sha512-84oo6ZTtoTUpjgNEr5SJyzQhzL72gaRodsSfyxC/AXRvwu0Yse9H8eF9IpGo7b8YetZhlI6v7ZQ6bKBFV/6S7w==
   dependencies:
     path-parse "^1.0.6"
 
@@ -12058,16 +12068,16 @@ snyk-try-require@1.3.1, snyk-try-require@^1.1.1, snyk-try-require@^1.3.1:
     then-fs "^2.0.0"
 
 snyk@^1.290.1:
-  version "1.290.1"
-  resolved "https://registry.yarnpkg.com/snyk/-/snyk-1.290.1.tgz#9705761ae03b4a41a2ee9d214c87e72e7d0c258a"
-  integrity sha512-8fB+b+trI5a6mU5cAKXOU2RG15xxr++4zYxkfNpkFkhbUqkcLsJtXD4H7Pcs6vXcOvoiEafyziPTpYurPFDXBQ==
+  version "1.290.2"
+  resolved "https://registry.yarnpkg.com/snyk/-/snyk-1.290.2.tgz#a5e36e735a8083464263abdb266b6c9b3d46de7f"
+  integrity sha512-siieHkSY/b3Yw1Gf84L07j65m2Bht1PamAbX3cmZ1zAzsUxfXpqZq5W9PlAp5z1d0Tp1vxsQmXw6UGW0K1Tq1Q==
   dependencies:
     "@snyk/cli-interface" "2.3.0"
     "@snyk/configstore" "^3.2.0-rc1"
     "@snyk/dep-graph" "1.13.1"
     "@snyk/gemfile" "1.2.0"
     "@snyk/snyk-cocoapods-plugin" "2.0.1"
-    "@snyk/update-notifier" "^2.5.1-rc1"
+    "@snyk/update-notifier" "^2.5.1-rc2"
     "@types/agent-base" "^4.2.0"
     "@types/restify" "^4.3.6"
     abbrev "^1.1.1"
@@ -13435,9 +13445,9 @@ uglify-js@^2.6.0:
     uglify-to-browserify "~1.0.0"
 
 uglify-js@^3.0.5, uglify-js@^3.1.4:
-  version "3.7.6"
-  resolved "https://registry.yarnpkg.com/uglify-js/-/uglify-js-3.7.6.tgz#0783daa867d4bc962a37cc92f67f6e3238c47485"
-  integrity sha512-yYqjArOYSxvqeeiYH2VGjZOqq6SVmhxzaPjJC1W2F9e+bqvFL9QXQ2osQuKUFjM2hGjKG2YclQnRKWQSt/nOTQ==
+  version "3.7.7"
+  resolved "https://registry.yarnpkg.com/uglify-js/-/uglify-js-3.7.7.tgz#21e52c7dccda80a53bf7cde69628a7e511aec9c9"
+  integrity sha512-FeSU+hi7ULYy6mn8PKio/tXsdSXN35lm4KgV2asx00kzrLU9Pi3oAslcJT70Jdj7PHX29gGUPOT6+lXGBbemhA==
   dependencies:
     commander "~2.20.3"
     source-map "~0.6.1"
