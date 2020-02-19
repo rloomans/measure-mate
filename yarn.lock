@@ -292,6 +292,11 @@
     d3-collection "1"
     d3-shape "^1.2.0"
 
+"@popperjs/core@^2.0.0":
+  version "2.0.6"
+  resolved "https://registry.yarnpkg.com/@popperjs/core/-/core-2.0.6.tgz#5a39ac118811ca844155b0ad5190b8c24f35e533"
+  integrity sha512-zj7Gw8QC4jmR92eKUvtrZUEpl2ypRbq+qlE4pwf9n2hnUO9BOAcWUs4/Ht+gNIbFt98xtqhLvccdCfD469MzpQ==
+
 "@restart/hooks@^0.3.12":
   version "0.3.14"
   resolved "https://registry.yarnpkg.com/@restart/hooks/-/hooks-0.3.14.tgz#1e0f045aadf0b06229b58eeba91351d90fb9452a"
@@ -10346,11 +10351,6 @@ polytope-closest-point@^1.0.0:
   dependencies:
     numeric "^1.2.6"
 
-popper.js@^1.15.0:
-  version "1.15.0"
-  resolved "https://registry.yarnpkg.com/popper.js/-/popper.js-1.15.0.tgz#5560b99bbad7647e9faa475c6b8056621f5a4ff2"
-  integrity sha512-w010cY1oCUmI+9KwwlWki+r5jxKfTFDVoadl7MSrIujHU5MJ5OR6HTDj6Xo8aoR/QsA56x8jKjA59qGH4ELtrA==
-
 portscanner@2.1.1:
   version "2.1.1"
   resolved "https://registry.yarnpkg.com/portscanner/-/portscanner-2.1.1.tgz#eabb409e4de24950f5a2a516d35ae769343fbb96"
@@ -10843,15 +10843,15 @@ react-overlays@^0.7.4:
     prop-types-extra "^1.0.1"
     warning "^3.0.0"
 
-react-overlays@^2.1.1:
-  version "2.1.1"
-  resolved "https://registry.yarnpkg.com/react-overlays/-/react-overlays-2.1.1.tgz#ffe2090c4a10da6b8947a1c7b1a67d0457648a0d"
-  integrity sha512-gaQJwmb8Ij2IGVt4D1HmLtl4A0mDVYxlsv/8i0dHWK7Mw0kNat6ORelbbEWzaXTK1TqMeQtJw/jraL3WOADz3w==
+react-overlays@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/react-overlays/-/react-overlays-3.0.0.tgz#c22f1fb450e66d529ca1fff2f0b117b28b3b4917"
+  integrity sha512-O54xzjVPlu5ERodZw27CfWSu0hDGm8LR6OOlTLAFi3EDXFTH9KfpdFs4Qv+8ZtxNQhiISbwFKt7O67d264cPDw==
   dependencies:
     "@babel/runtime" "^7.4.5"
+    "@popperjs/core" "^2.0.0"
     "@restart/hooks" "^0.3.12"
     dom-helpers "^5.1.0"
-    popper.js "^1.15.0"
     prop-types "^15.7.2"
     uncontrollable "^7.0.0"
     warning "^4.0.3"
