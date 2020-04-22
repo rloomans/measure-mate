@@ -72,7 +72,8 @@ REST_FRAMEWORK = {
     'DEFAULT_FILTER_BACKENDS': (
         'django_filters.rest_framework.DjangoFilterBackend',
     ),
-    'COMPACT_JSON': True
+    'DEFAULT_SCHEMA_CLASS': 'rest_framework.schemas.coreapi.AutoSchema',     
+    'COMPACT_JSON': True,
 }
 
 ROOT_URLCONF = 'measure_mate.urls'
