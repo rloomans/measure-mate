@@ -2,9 +2,8 @@ language: python
 dist: xenial
 sudo: true
 python:
-  - "3.6.9"
-  - "3.7.5"
-  - "3.8.0"
+  - "3.7.7"
+  - "3.8.2"
 env:
   global:
     - DATABASE_URL="sqlite:///:memory"
