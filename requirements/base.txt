@@ -9,7 +9,7 @@ django-csp==3.6
 django-csp-reports==1.4
 whitenoise==5.0.1
 django-excel==0.0.10
-pyexcel==0.5.15
+pyexcel==0.6.0
 pyexcel-xls==0.5.8
 pyexcel-xlsx==0.5.8
 pytz==2019.3
