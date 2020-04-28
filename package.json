@@ -23,8 +23,7 @@
     "postinstall": "yarn run snyk-protect",
     "snyk-protect": "snyk protect || true",
     "test": "snyk test && gulp test",
-    "watch": "gulp watch",
-    "prepublish": "npm run snyk-protect"
+    "watch": "gulp watch"
   },
   "browserify": {
     "transform": [

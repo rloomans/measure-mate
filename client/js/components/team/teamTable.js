@@ -10,12 +10,15 @@ var TeamTable = createReactClass({
   displayName: 'TeamTable',
 
   loadAllTagsFromServer: function () {
+    console.debug('loadAllTagsFromServer(): requesting /api/tags/')
     var url = '/api/tags/'
     $.ajax({
       url: url,
       dataType: 'json',
       cache: false,
       success: function (data) {
+	console.debug('got tag data: ', data)
+
         var tags = {}
 
         data.forEach(function (tag) {
@@ -29,6 +32,8 @@ var TeamTable = createReactClass({
           }, this)
         }, this)
 
+	console.debug('setting teamTags to: ', teamTags)
+
         this.setState({ teamTags: teamTags })
       }.bind(this),
       error: function (xhr, status, err) {
@@ -38,11 +43,13 @@ var TeamTable = createReactClass({
   },
 
   loadTeamsFromServer: function () {
+    console.debug('loadTeamsFromServer(): requesting /api/teams/')
     $.ajax({
       url: '/api/teams/',
       dataType: 'json',
       cache: false,
       success: function (teams) {
+	console.debug('got team data: ', teams)
         var teamTags = {}
         teams.forEach(function (team) {
           teamTags[team.id] = team.tags.map(function (tagId) {
@@ -55,6 +62,8 @@ var TeamTable = createReactClass({
           teamTags: teamTags,
           loaded: true
         })
+
+	console.debug('setting teams to: ', teams)
 
         this.loadAllTagsFromServer()
       }.bind(this),
@@ -77,6 +86,7 @@ var TeamTable = createReactClass({
   },
 
   render: function () {
+    console.debug('render()')
     return (
       <div>
         <Loader loaded={this.state.loaded}>
