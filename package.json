@@ -20,11 +20,11 @@
     "build": "gulp build",
     "default": "gulp default",
     "heroku-postbuild": "gulp build --production",
-    "postinstall": "yarn run snyk-protect",
+    "postinstall": "true",
     "snyk-protect": "snyk protect || true",
     "test": "snyk test && gulp test",
     "watch": "gulp watch",
-    "prepublish": "npm run snyk-protect"
+    "prepublish": "yarn run snyk-protect"
   },
   "browserify": {
     "transform": [
@@ -57,7 +57,7 @@
     "lodash": "^4.17.14",
     "minimist": "^1.2.5",
     "moment": "^2.24.0",
-    "plotly.js": "^1.53.0",
+    "plotly.js": "^1.54.0",
     "prop-types": "^15.7.2",
     "react": "^15.6.2",
     "react-bootstrap": "^0.32.4",
@@ -73,7 +73,7 @@
     "react-select": "^1.2.1",
     "require-dir": "^1.2.0",
     "semver": "^7.3.2",
-    "snyk": "^1.316.1",
+    "snyk": "^1.317.0",
     "tablesort": "^5.2.0",
     "through2": "^3.0.1",
     "vinyl-buffer": "^1.0.0",
