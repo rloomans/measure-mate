@@ -56,7 +56,7 @@
     "jquery": "^3.5.0",
     "lodash": "^4.17.14",
     "minimist": "^1.2.5",
-    "moment": "^2.25.1",
+    "moment": "^2.25.3",
     "plotly.js": "^1.54.1",
     "prop-types": "^15.7.2",
     "react": "^15.6.2",
