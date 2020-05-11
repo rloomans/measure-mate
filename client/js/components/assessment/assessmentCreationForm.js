@@ -35,7 +35,7 @@ var AssessmentCreationForm = createReactClass({
     }
   },
 
-  changeHandlerTemplate: function (val) {
+  handleChangeTemplate: function (val) {
     this.setState({
       template: val.value,
       taggable: val.taggable
@@ -136,7 +136,7 @@ var AssessmentCreationForm = createReactClass({
   },
 
   handleTagsChange: function (newTags) {
-    let entered = _.last(newTags)
+    const entered = _.last(newTags)
     if (entered && entered.create) {
       newTags.pop()
       this.createTag(entered.value)
@@ -223,7 +223,7 @@ var AssessmentCreationForm = createReactClass({
               ref='template'
               {...this.props}
               value={this.state.template}
-              onChange={this.changeHandlerTemplate}
+              onChange={this.handleChangeTemplate}
             />
           </Col>
         </FormGroup>

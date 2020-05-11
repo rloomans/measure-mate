@@ -31,17 +31,17 @@ var FinaliseAssessment = createReactClass({
     )
   },
 
-  close () {
+  handleClose () {
     this.setState({ showModal: false })
   },
 
-  open () {
+  handleOpen () {
     this.setState({ showModal: true })
   },
 
   handleLock: function () {
     this.props.markAssessmentDone()
-    this.close()
+    this.handleClose()
   },
 
   render: function () {
@@ -55,7 +55,7 @@ var FinaliseAssessment = createReactClass({
     } else if (this.props.isSummaryTab) {
       return (
         <Panel bsStyle='primary' header='Happy how everything looks?'>
-          <Modal show={this.state.showModal} onHide={this.close}>
+          <Modal show={this.state.showModal} onHide={this.handleClose}>
             <Modal.Header closeButton>
               <Modal.Title>Are you sure?</Modal.Title>
             </Modal.Header>
@@ -63,12 +63,12 @@ var FinaliseAssessment = createReactClass({
               <p>Once you commit you will not be able to make futher changes.</p>
             </Modal.Body>
             <Modal.Footer>
-              <Button onClick={this.close}>Close</Button>
+              <Button onClick={this.handleClose}>Close</Button>
               <Button bsStyle='primary' onClick={this.handleLock}>Lock It In</Button>
             </Modal.Footer>
           </Modal>
           <p>When you're finished, lock in your results here.</p>
-          <Button onClick={this.open} bsStyle='primary'>Lock It In</Button>
+          <Button onClick={this.handleOpen} bsStyle='primary'>Lock It In</Button>
         </Panel>
       )
     } else {

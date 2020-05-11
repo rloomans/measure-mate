@@ -17,20 +17,17 @@ var Rating = createReactClass({
   displayName: 'Rating',
 
   propTypes: {
-    eventKey: PropTypes.number,
     measurement: PropTypes.object,
-    assessId: PropTypes.string.isRequired,
-    attribute: PropTypes.object,
     saveMeasurement: PropTypes.func.isRequired,
     rating: PropTypes.object
   },
 
-  ratingClick: function (e) {
+  handleRatingClick: function (e) {
     e.preventDefault()
     this.props.saveMeasurement('rating', this.props.rating.id)
   },
 
-  targetClick: function (e) {
+  handleTargetClick: function (e) {
     e.preventDefault()
     this.props.saveMeasurement('target', this.props.rating.id)
   },
@@ -43,14 +40,18 @@ var Rating = createReactClass({
 
     var header = (
       <div>
-        <h4 className='inline clickable' onClick={this.ratingClick}>{this.props.rating.name}</h4>
+        <h4 className='inline clickable' onClick={this.handleRatingClick}>{this.props.rating.name}</h4>
         {(this.props.measurement && this.props.measurement.rating) &&
           <span>
-            <Button onClick={this.targetClick} bsStyle={targetBsStyle} className='target-btn' active={targetActive} bsSize='xsmall'>
+            <Button onClick={this.handleTargetClick} bsStyle={targetBsStyle} className='target-btn' active={targetActive} bsSize='xsmall'>
               Target
             </Button>
-            <OverlayTrigger trigger='click' placement='left' rootClose
-              overlay={<Popover id={'rating-popover-' + this.props.rating.id}>You have decided your current rating. Set your future goal by selecting a target button.</Popover>}>
+            <OverlayTrigger
+              trigger='click'
+              placement='left'
+              rootClose
+              overlay={<Popover id={'rating-popover-' + this.props.rating.id}>You have decided your current rating. Set your future goal by selecting a target button.</Popover>}
+            >
               <Glyphicon className='target-help clickable' glyph='question-sign' />
             </OverlayTrigger>
           </span>}
@@ -58,8 +59,8 @@ var Rating = createReactClass({
     )
 
     return (
-      <ListGroupItem active={ratingActive} key={this.props.rating.id} header={header} className={descClass} style={{ 'borderLeftColor': this.props.rating.colour }}>
-        <div className='clickable' onClick={this.ratingClick}>
+      <ListGroupItem active={ratingActive} key={this.props.rating.id} header={header} className={descClass} style={{ borderLeftColor: this.props.rating.colour }}>
+        <div className='clickable' onClick={this.handleRatingClick}>
           <ReactMarkdown escapeHtml source={this.props.rating.desc} containerTag='span' className='rating-desc' />
         </div>
       </ListGroupItem>

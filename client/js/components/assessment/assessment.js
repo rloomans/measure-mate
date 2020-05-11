@@ -89,7 +89,7 @@ var Assessment = createReactClass({
     )
   },
 
-  handleAlertHide () {
+  onAlertHide () {
     this.setState({ showAlert: false })
   },
 
@@ -191,7 +191,7 @@ var Assessment = createReactClass({
     var $target = $(attList)
 
     $('html, body').stop().animate({
-      'scrollTop': $target.offset().top
+      scrollTop: $target.offset().top
     }, 900, 'swing', function () {
       // window.location.hash = $target
     })
@@ -231,7 +231,8 @@ var Assessment = createReactClass({
         return (
           <LinkContainer
             key={attribute.id}
-            to={{ pathname: '/assessment/' + this.state.assessment.id + '/' + attribute.id }}>
+            to={{ pathname: '/assessment/' + this.state.assessment.id + '/' + attribute.id }}
+          >
             <NavItem eventKey={i + 1}>{tabIcon} {attribute.name}</NavItem>
           </LinkContainer>
         )
@@ -280,7 +281,8 @@ var Assessment = createReactClass({
                   {this.state.template &&
                     <LinkContainer
                       key='summary'
-                      to={{ pathname: '/assessment/' + this.state.assessment.id + '/summary' }}>
+                      to={{ pathname: '/assessment/' + this.state.assessment.id + '/summary' }}
+                    >
                       <NavItem eventKey={this.state.template.attributes.length + 1}>
                         <Glyphicon glyph='stats' /> Summary
                       </NavItem>
@@ -296,7 +298,7 @@ var Assessment = createReactClass({
             </Row>
           </div>
         </Loader>
-        <AppAlert showAlert={this.state.showAlert} alertType={this.state.alertType} alertDetail={this.state.alertDetail} handleHide={this.handleAlertHide} />
+        <AppAlert showAlert={this.state.showAlert} alertType={this.state.alertType} alertDetail={this.state.alertDetail} handleHide={this.onAlertHide} />
       </div>
     )
   }

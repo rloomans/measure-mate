@@ -56,7 +56,7 @@ var TeamList = createReactClass({
                   <td>{team.name}</td>
                   <td>{team.short_desc}</td>
                   <td className='wrap'>
-                    {this.props.teamTags.hasOwnProperty(team.id)
+                    {Object.prototype.hasOwnProperty.call(this.props.teamTags, team.id)
                       ? <TagList tags={this.props.teamTags[team.id] || []} />
                       : <span>•••&nbsp;</span>}
                   </td>

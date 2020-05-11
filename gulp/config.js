@@ -57,8 +57,8 @@ module.exports = {
     dest: cssDestination,
     production: production,
     uglifyOptions: {
-      'maxLineLen': 80,
-      'uglyComments': true
+      maxLineLen: 80,
+      uglyComments: true
     }
   },
 
@@ -114,11 +114,11 @@ module.exports = {
     src: './client/js/**/*.js',
     testSrc: './client/**/*test.js',
     mochaOptions: {
-      'ui': 'bdd',
-      'reporter': 'spec'
+      ui: 'bdd',
+      reporter: 'spec'
     },
     istanbulReportOptions: {
-      reporters: [ 'lcov', 'json' ]
+      reporters: ['lcov', 'json']
     },
     istanbulThresholds: {
       global: 0

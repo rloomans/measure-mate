@@ -1,8 +1,7 @@
-/* eslint-env jasmine */
+/* eslint-env chai */
 'use strict'
 
 var React = require('react')
-var Table = React.Table
 var expect = require('chai').expect
 var shallow = require('enzyme').shallow
 var AssessmentList = require('../../../../js/components/assessment/assessmentList')
@@ -26,14 +25,15 @@ var mockedAssessments = [
 
 var mockedAssessmentTags = {
   1: [],
-  2: [ { id: 1, name: 'test' }, { id: 2, name: 'foo' } ]
+  2: [{ id: 1, name: 'test' }, { id: 2, name: 'foo' }]
 }
 
 describe('AssessmentList Component', function () {
   it('contains a table', function () {
-    expect(shallow(<AssessmentList showTeams assessments={mockedAssessments} assessmentTags={mockedAssessmentTags} />)
-      .contains(<Table />))
-      .to
-      .equal(true)
+    const wrapper = shallow(<AssessmentList showTeams assessments={mockedAssessments} assessmentTags={mockedAssessmentTags} />)
+
+    const element = wrapper.find('table')
+
+    expect(element).to.not.be.empty
   })
 })

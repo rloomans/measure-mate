@@ -43,7 +43,8 @@ var TemplateSelect = createReactClass({
   render: function render () {
     return (
       <div>
-        <Select.Async delimeter=','
+        <Select.Async
+          delimeter=','
           multi={false}
           loadOptions={this.loadOptions}
           {...this.props}

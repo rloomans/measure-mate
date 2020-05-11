@@ -14,7 +14,7 @@ var noop = function () { }
 
 describe('Finalise Assessment Component', function () {
   it('directs to the summary page', function () {
-    let mockedAssessment = { 'id': 1, 'status': 'TODO' }
+    const mockedAssessment = { id: 1, status: 'TODO' }
 
     const wrapper = shallow(
       <FinaliseAssessment isSummaryTab={false} assessment={mockedAssessment} markAssessmentDone={noop} />
@@ -24,7 +24,7 @@ describe('Finalise Assessment Component', function () {
   })
 
   it('allows lock in on summary tab', function () {
-    let mockedAssessment = { 'id': 1, 'status': 'TODO' }
+    const mockedAssessment = { id: 1, status: 'TODO' }
 
     const wrapper = shallow(
       <FinaliseAssessment isSummaryTab assessment={mockedAssessment} markAssessmentDone={noop} />
@@ -34,7 +34,7 @@ describe('Finalise Assessment Component', function () {
   })
 
   it('knows the assessment is read only', function () {
-    let mockedAssessment = { 'id': 1, 'status': 'DONE' }
+    const mockedAssessment = { id: 1, status: 'DONE' }
 
     const wrapper = shallow(
       <FinaliseAssessment isSummaryTab={false} assessment={mockedAssessment} markAssessmentDone={noop} />
@@ -44,7 +44,7 @@ describe('Finalise Assessment Component', function () {
   })
 
   it('knows the assessment is read only on summary tab', function () {
-    let mockedAssessment = { 'id': 1, 'status': 'DONE' }
+    const mockedAssessment = { id: 1, status: 'DONE' }
 
     const wrapper = shallow(
       <FinaliseAssessment isSummaryTab assessment={mockedAssessment} markAssessmentDone={noop} />

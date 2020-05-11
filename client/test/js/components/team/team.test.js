@@ -8,7 +8,7 @@ var expect = require('chai').expect
 var shallow = require('enzyme').shallow
 var Team = require('../../../../js/components/team/team')
 
-var mockedParams = { 'teamId': 1 }
+var mockedParams = { teamId: 1 }
 
 describe('Team Page Component', function () {
   it('contains team details', function () {

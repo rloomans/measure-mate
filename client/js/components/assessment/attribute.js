@@ -98,11 +98,11 @@ var Attribute = createReactClass({
     this.props.syncMeasurement(postData)
   },
 
-  onObservationChange: function (text) {
+  handleOnObservationChange: function (text) {
     this.setState({ observations: text })
   },
 
-  onActionChange: function (text) {
+  handleOnActionChange: function (text) {
     this.setState({ action: text })
   },
 
@@ -126,15 +126,17 @@ var Attribute = createReactClass({
         {this.state.attribute &&
           <Panel header={this.state.attribute.name || ''} bsStyle='primary'>
             <Alert bsStyle='warning'>
-              <ReactMarkdown escapeHtml
+              <ReactMarkdown
+                escapeHtml
                 source={this.state.attribute.desc || ''}
-                className={this.state.attribute.desc_class || ''} />
+                className={this.state.attribute.desc_class || ''}
+              />
             </Alert>
             <ObserveFormControl
               measurement={this.state.measurement}
               syncMeasurement={this.props.syncMeasurement}
-              onObservationChange={this.onObservationChange}
-              onActionChange={this.onActionChange}
+              onObservationChange={this.handleOnObservationChange}
+              onActionChange={this.handleOnActionChange}
               attributeId={(this.state.attribute) ? this.state.attribute.id : null}
               disabled={this.props.disabled}
             />

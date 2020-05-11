@@ -1,11 +1,11 @@
 var TablesortCore = require('tablesort')
 
 {
-  let cleanNumber = function (i) {
+  const cleanNumber = function (i) {
     return i.replace(/[^\-?0-9.]/g, '')
   }
 
-  let compareNumber = function (a, b) {
+  const compareNumber = function (a, b) {
     a = parseFloat(a)
     b = parseFloat(b)
 

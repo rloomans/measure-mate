@@ -98,12 +98,12 @@ var ObserveFormControl = createReactClass({
     }
   },
 
-  onObservationChange: function (event) {
+  handleOnObservationChange: function (event) {
     this.setState({ observations: event.target.value })
     this.handleObserveDebounced()
   },
 
-  onActionChange: function (event) {
+  handleOnActionChange: function (event) {
     this.setState({ action: event.target.value })
     this.handleActionDebounced()
   },
@@ -153,36 +153,40 @@ var ObserveFormControl = createReactClass({
           <ControlLabel>Observations</ControlLabel>
           {this.props.disabled
             ? <Panel bsStyle='default'><ReactMarkdown escapeHtml source={this.state.observations} /></Panel>
-            : <FormControl componentClass='textarea' rows='3'
+            : <FormControl
+              componentClass='textarea'
+              rows='3'
               placeholder='Discuss your current practices and capture some notes.'
               ref='observeInput'
               value={this.state.observations}
-              onChange={this.onObservationChange}
+              onChange={this.handleOnObservationChange}
             />}
         </FormGroup>
         <FormGroup>
           <ControlLabel>Actions</ControlLabel>
           {this.props.disabled
             ? <Panel bsStyle='default'><ReactMarkdown escapeHtml source={this.state.action} /></Panel>
-            : <FormControl componentClass='textarea' rows='3'
+            : <FormControl
+              componentClass='textarea' rows='3'
               placeholder='Record actions you can take to improve your current practices.'
               ref='actionInput'
               value={this.state.action}
-              onChange={this.onActionChange}
+              onChange={this.handleOnActionChange}
             />}
         </FormGroup>
         {this.props.disabled ||
           <FormGroup>
-            <Button ref='obsSaveBtn'
+            <Button
+              ref='obsSaveBtn'
               disabled={this.state.saveBtnDisabled}
               bsStyle={this.state.saveBtnDisabled ? 'default' : 'primary'}
               bsSize='xsmall'
-              onClick={this.handleSave}>
+              onClick={this.handleSave}
+            >
               Save
             </Button>
             {syncStatus}
-          </FormGroup>
-        }
+          </FormGroup>}
       </div>
     )
   }
