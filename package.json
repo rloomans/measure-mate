@@ -53,11 +53,11 @@
     "gulp-uglifycss": "^1.1.0",
     "history": "^4.10.1",
     "http-status-codes": "^1.4.0",
-    "jquery": "^3.5.0",
+    "jquery": "^3.5.1",
     "lodash": "^4.17.14",
     "minimist": "^1.2.5",
-    "moment": "^2.25.1",
-    "plotly.js": "^1.54.0",
+    "moment": "^2.25.3",
+    "plotly.js": "^1.54.1",
     "prop-types": "^15.7.2",
     "react": "^15.6.2",
     "react-bootstrap": "^0.32.4",
@@ -73,7 +73,7 @@
     "react-select": "^1.2.1",
     "require-dir": "^1.2.0",
     "semver": "^7.3.2",
-    "snyk": "^1.317.0",
+    "snyk": "^1.319.2",
     "tablesort": "^5.2.0",
     "through2": "^3.0.1",
     "vinyl-buffer": "^1.0.0",
@@ -87,7 +87,7 @@
     "chai": "^4.2.0",
     "coveralls": "^3.1.0",
     "enzyme": "^2.9.1",
-    "eslint": "^6.8.0",
+    "eslint": "^7.0.0",
     "eslint-config-standard": "^14.1.1",
     "eslint-config-standard-jsx": "^8.1.0",
     "eslint-config-standard-react": "^9.2.0",
@@ -115,7 +115,7 @@
     "xmldom": "^0.3.0"
   },
   "resolutions": {
-    "eslint": "6.8.0"
+    "eslint": "7.0.0"
   },
   "snyk": true
 }
