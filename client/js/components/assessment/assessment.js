@@ -242,18 +242,20 @@ var Assessment = createReactClass({
     return (
       <div id='attribute-list'>
         <Loader loaded={this.state.initialLoad}>
-          {this.state.assessment && <PageHeader>
-            {this.state.assessment.template.name}
-            <small>
-              &nbsp;
-              {this.state.assessment.template.short_desc}
-              &nbsp;
-              <span className='wrap'>
-                <TagList tags={this.state.assessmentTags} />
-              </span>
-              {this.state.assessment.status === 'DONE' && <Label>Read Only</Label>}
-            </small>
-          </PageHeader>}
+          {this.state.assessment && (
+            <PageHeader>
+              {this.state.assessment.template.name}
+              <small>
+                &nbsp;
+                {this.state.assessment.template.short_desc}
+                &nbsp;
+                <span className='wrap'>
+                  <TagList tags={this.state.assessmentTags} />
+                </span>
+                {this.state.assessment.status === 'DONE' && <Label>Read Only</Label>}
+              </small>
+            </PageHeader>
+          )}
           <div>
             <Row>
               <Col className='attribute-content' xs={12} md={9} lg={9}>

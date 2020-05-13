@@ -191,21 +191,23 @@ var AssessmentCreationForm = createReactClass({
 
   render: function () {
     var tagSelect = (this.state.taggable
-      ? <FormGroup controlId='tags'>
-        <Col xs={12} sm={3} lg={2}>
-          <ControlLabel>Tags</ControlLabel>
-        </Col>
-        <Col xs={12} sm={9} lg={8}>
-          <TagSelect
-            ref='tags'
-            label='Tags'
-            {...this.props}
-            value={this.state.tags}
-            onChange={this.handleTagsChange}
-            filterOptions={this.filterOptions}
-          />
-        </Col>
-      </FormGroup>
+      ? (
+        <FormGroup controlId='tags'>
+          <Col xs={12} sm={3} lg={2}>
+            <ControlLabel>Tags</ControlLabel>
+          </Col>
+          <Col xs={12} sm={9} lg={8}>
+            <TagSelect
+              ref='tags'
+              label='Tags'
+              {...this.props}
+              value={this.state.tags}
+              onChange={this.handleTagsChange}
+              filterOptions={this.filterOptions}
+            />
+          </Col>
+        </FormGroup>
+      )
       : '')
 
     return (

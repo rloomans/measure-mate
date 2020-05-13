@@ -68,9 +68,11 @@ var AssessmentList = createReactClass({
                       : <span>•••</span>}
                     {assessment.status === 'DONE' && <Label bsStyle='default'>Read Only</Label>}
                   </td>
-                  {this.props.showTeams && <td>
-                    <a href={'/team/' + assessment.team.id + '/'}>{assessment.team.name}</a>
-                  </td>}
+                  {this.props.showTeams && (
+                    <td>
+                      <a href={'/team/' + assessment.team.id + '/'}>{assessment.team.name}</a>
+                    </td>
+                  )}
                 </tr>
               </LinkContainer>
             )

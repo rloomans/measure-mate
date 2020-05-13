@@ -153,26 +153,28 @@ var ObserveFormControl = createReactClass({
           <ControlLabel>Observations</ControlLabel>
           {this.props.disabled
             ? <Panel bsStyle='default'><ReactMarkdown escapeHtml source={this.state.observations} /></Panel>
-            : <FormControl
-              componentClass='textarea'
-              rows='3'
-              placeholder='Discuss your current practices and capture some notes.'
-              ref='observeInput'
-              value={this.state.observations}
-              onChange={this.handleOnObservationChange}
-            />}
+            : (
+              <FormControl
+                componentClass='textarea'
+                rows='3'
+                placeholder='Discuss your current practices and capture some notes.'
+                ref='observeInput'
+                value={this.state.observations}
+                onChange={this.handleOnObservationChange}
+              />)}
         </FormGroup>
         <FormGroup>
           <ControlLabel>Actions</ControlLabel>
           {this.props.disabled
             ? <Panel bsStyle='default'><ReactMarkdown escapeHtml source={this.state.action} /></Panel>
-            : <FormControl
-              componentClass='textarea' rows='3'
-              placeholder='Record actions you can take to improve your current practices.'
-              ref='actionInput'
-              value={this.state.action}
-              onChange={this.handleOnActionChange}
-            />}
+            : (
+              <FormControl
+                componentClass='textarea' rows='3'
+                placeholder='Record actions you can take to improve your current practices.'
+                ref='actionInput'
+                value={this.state.action}
+                onChange={this.handleOnActionChange}
+              />)}
         </FormGroup>
         {this.props.disabled ||
           <FormGroup>
