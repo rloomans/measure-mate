@@ -52,7 +52,7 @@
     "gulp-sourcemaps": "^2.6.5",
     "gulp-uglify": "^3.0.2",
     "gulp-uglifycss": "^1.1.0",
-    "history": "^4.10.1",
+    "history": "^5.0.0",
     "http-status-codes": "^1.4.0",
     "jquery": "^3.5.1",
     "lodash": "^4.17.14",
