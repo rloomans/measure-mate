@@ -74,7 +74,7 @@
     "react-select": "^1.2.1",
     "require-dir": "^1.2.0",
     "semver": "^7.3.2",
-    "snyk": "^1.341.1",
+    "snyk": "^1.342.2",
     "tablesort": "^5.2.1",
     "through2": "^3.0.1",
     "vinyl-buffer": "^1.0.0",
