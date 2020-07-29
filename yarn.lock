@@ -6674,12 +6674,12 @@ gulp-mocha@^3.0.1:
     temp "^0.8.3"
     through "^2.3.4"
 
-gulp-noop@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/gulp-noop/-/gulp-noop-1.0.0.tgz#082b1142493512ce5c5ab2e1ec3e7bb48b575c79"
-  integrity sha1-CCsRQkk1Es5cWrLh7D57tItXXHk=
+gulp-noop@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/gulp-noop/-/gulp-noop-1.0.1.tgz#6ab3534e36b6d0a6175812ac2175c81c0924e8bf"
+  integrity sha512-bX8wd6jgjgrT/DVok2ms2XXGOzhDnQe3QP2lCfmPFgyOaLtc3NmlKbFA0J03UniBgFjU7OFba7EMKSLEDfvCTQ==
   dependencies:
-    through2 "^2.0.1"
+    through2 "^2.0.0"
 
 gulp-notify@^3.2.0:
   version "3.2.0"
