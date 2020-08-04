@@ -7,7 +7,7 @@ dj-database-url==0.5.0
 django-rest-swagger==2.2.0
 django-csp==3.6
 django-csp-reports==1.4
-whitenoise==5.1.0
+whitenoise==5.2.0
 django-excel==0.0.10
 pyexcel==0.6.2
 pyexcel-xls==0.5.8
