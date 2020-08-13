@@ -110,7 +110,7 @@
     "markdownlint": "^0.20.4",
     "mocha": "^8.1.1",
     "react-test-renderer": "^15.6.2",
-    "sinon": "^9.0.2",
+    "sinon": "^9.0.3",
     "stylelint": "^13.6.1",
     "stylelint-config-standard": "^20.0.0",
     "watchify": "^3.11.1",
