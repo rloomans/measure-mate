@@ -13,12 +13,10 @@ var Summary = createReactClass({
   displayName: 'Summary',
 
   propTypes: {
-    eventKey: PropTypes.number,
     activeTab: PropTypes.number,
     params: PropTypes.object,
     template: PropTypes.object,
     measurements: PropTypes.array,
-    attribute: PropTypes.object,
     assessment: PropTypes.object
   },
 

@@ -1,7 +1,5 @@
 import datetime
 
-from django.utils import six
-
 from rest_framework import status
 from rest_framework.reverse import reverse
 from rest_framework.test import APITestCase
@@ -30,7 +28,7 @@ class TeamAPITestCases(APITestCase):
         self.assertEqual(datetime.datetime.strptime(response.data['updated'], '%Y-%m-%dT%H:%M:%S.%fZ'),
                          team.updated.replace(tzinfo=None))
         self.assertEqual(len(response.data['tags']), 2)
-        six.assertCountEqual(self, response.data['tags'], [tag1.id, tag2.id])
+        self.assertCountEqual(response.data['tags'], [tag1.id, tag2.id])
 
     def test_list_team(self):
         """
@@ -107,4 +105,4 @@ class TeamAPITestCases(APITestCase):
         self.assertEqual(response.data['name'], data['name'])
         self.assertEqual(response.data['short_desc'], data['short_desc'])
         self.assertEqual(len(response.data['tags']), 2)
-        six.assertCountEqual(self, response.data['tags'], [tag1.id, tag3.id])
+        self.assertCountEqual(response.data['tags'], [tag1.id, tag3.id])

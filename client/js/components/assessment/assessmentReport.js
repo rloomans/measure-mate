@@ -66,11 +66,11 @@ var AssessmentReport = createReactClass({
 
     // assume that rating names & ranks are the same for all attributes
     var ratings = this.props.template.attributes[0].ratings.map(function (rating) {
-      return { 'rank': rating.rank, 'name': rating.name }
+      return { rank: rating.rank, name: rating.name }
     })
 
     if (!_.find(ratings, function (rating) { return rating.rank === 0 })) {
-      ratings.push({ 'rank': 0, 'name': 'N/A' })
+      ratings.push({ rank: 0, name: 'N/A' })
       ratings.sort(function (a, b) { return a.rank - b.rank })
     }
 
@@ -103,22 +103,22 @@ var AssessmentReport = createReactClass({
         targetSeries.push(targetRating ? targetRating.rank : 0)
 
         var currentStyle = {
-          'fontWeight': 'bold',
-          'verticalAlign': 'middle'
+          fontWeight: 'bold',
+          verticalAlign: 'middle'
         }
         var currentColour = (currentRating ? currentRating.colour : '')
         if (currentColour) {
-          currentStyle['backgroundColor'] = currentColour
-          currentStyle['color'] = (currentColour === 'Yellow') ? 'Black' : 'White'
+          currentStyle.backgroundColor = currentColour
+          currentStyle.color = (currentColour === 'Yellow') ? 'Black' : 'White'
         }
         var targetStyle = {
-          'fontWeight': 'bold',
-          'verticalAlign': 'middle'
+          fontWeight: 'bold',
+          verticalAlign: 'middle'
         }
         var targetColour = (targetRating ? targetRating.colour : '')
         if (targetColour) {
-          targetStyle['backgroundColor'] = targetColour
-          targetStyle['color'] = (targetColour === 'Yellow') ? 'Black' : 'White'
+          targetStyle.backgroundColor = targetColour
+          targetStyle.color = (targetColour === 'Yellow') ? 'Black' : 'White'
         }
 
         summaryRows.push(

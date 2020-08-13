@@ -1,5 +1,5 @@
 {
-  "extends": ["standard", "standard-react"],
+  "extends": ["standard", "standard-react", "plugin:chai-friendly/recommended"],
   "env": {
     "commonjs": true,
     "browser": true,
@@ -22,5 +22,8 @@
   "globals": {
     "jQuery": true,
     "$": true
-  }
+  },
+  "plugins": [
+    "chai-friendly"
+  ]
 }

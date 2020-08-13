@@ -177,7 +177,7 @@ var TeamCreationForm = createReactClass({
   },
 
   handleTagsChange: function (newTags) {
-    let entered = _.last(newTags)
+    const entered = _.last(newTags)
     if (entered && entered.create) {
       newTags.pop()
       this.createTag(entered.value)
@@ -318,7 +318,8 @@ var TeamCreationForm = createReactClass({
               bsStyle='primary'
               disabled={creatingTag || !this.state.changed}
               type='submit'
-              onClick={this.handleSubmit}>
+              onClick={this.handleSubmit}
+            >
               {this.state.teamId ? 'Save' : 'Create'}
             </Button>
           </Col>

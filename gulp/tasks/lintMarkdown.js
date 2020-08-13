@@ -13,10 +13,10 @@ if (config.production) {
   var markdownlint = require('markdownlint')
 
   gulp.task('lint:markdown', function () {
-    return gulp.src(config.src, { 'read': false })
+    return gulp.src(config.src, { read: false })
       .pipe(through2.obj(function (file, enc, next) {
         markdownlint(
-          { 'files': [ file.relative ] },
+          { files: [file.relative] },
           function (err, result) {
             var resultString = (result || '').toString()
             if (resultString) {

@@ -43,7 +43,8 @@ var TagSelect = createReactClass({
   render: function render () {
     return (
       <div>
-        <Select.Async {...this.props}
+        <Select.Async
+          {...this.props}
           delimeter=','
           multi
           options={[]}

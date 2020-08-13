@@ -1,11 +1,13 @@
 {
   "presets": [
-    ["env", {
-      "targets": {
-        "browsers": ["last 2 versions", "ie >= 10"]
-      },
-      "useBuiltIns": "entry"
-    }],
+    [
+      "env",
+      {
+        "corejs": 3,
+        "targets": "> 0.25%, not dead",
+        "useBuiltIns": "entry"
+      }
+    ],
     "react"
   ],
   "plugins": ["add-react-displayname"]

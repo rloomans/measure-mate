@@ -51,7 +51,7 @@ var AssessmentList = createReactClass({
 
             return (
               <LinkContainer key={assessment.id} to={{ pathname: assessmentUrl }}>
-                <tr className='clickable' >
+                <tr className='clickable'>
                   <td data-sort={assessment.id} data-sort-method='number'>
                     <a href={assessmentUrl}>{assessment.id}</a>
                   </td>
@@ -63,14 +63,16 @@ var AssessmentList = createReactClass({
                   </td>
                   <td>{assessment.template.name}</td>
                   <td className='wrap'>
-                    {this.props.assessmentTags.hasOwnProperty(assessment.id)
+                    {Object.prototype.hasOwnProperty.call(this.props.assessmentTags, assessment.id)
                       ? <TagList tags={this.props.assessmentTags[assessment.id] || []} />
                       : <span>•••</span>}
                     {assessment.status === 'DONE' && <Label bsStyle='default'>Read Only</Label>}
                   </td>
-                  {this.props.showTeams && <td>
-                    <a href={'/team/' + assessment.team.id + '/'}>{assessment.team.name}</a>
-                  </td>}
+                  {this.props.showTeams && (
+                    <td>
+                      <a href={'/team/' + assessment.team.id + '/'}>{assessment.team.name}</a>
+                    </td>
+                  )}
                 </tr>
               </LinkContainer>
             )

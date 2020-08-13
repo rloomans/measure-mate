@@ -35,7 +35,7 @@ var AssessmentCreationForm = createReactClass({
     }
   },
 
-  changeHandlerTemplate: function (val) {
+  handleChangeTemplate: function (val) {
     this.setState({
       template: val.value,
       taggable: val.taggable
@@ -136,7 +136,7 @@ var AssessmentCreationForm = createReactClass({
   },
 
   handleTagsChange: function (newTags) {
-    let entered = _.last(newTags)
+    const entered = _.last(newTags)
     if (entered && entered.create) {
       newTags.pop()
       this.createTag(entered.value)
@@ -191,21 +191,23 @@ var AssessmentCreationForm = createReactClass({
 
   render: function () {
     var tagSelect = (this.state.taggable
-      ? <FormGroup controlId='tags'>
-        <Col xs={12} sm={3} lg={2}>
-          <ControlLabel>Tags</ControlLabel>
-        </Col>
-        <Col xs={12} sm={9} lg={8}>
-          <TagSelect
-            ref='tags'
-            label='Tags'
-            {...this.props}
-            value={this.state.tags}
-            onChange={this.handleTagsChange}
-            filterOptions={this.filterOptions}
-          />
-        </Col>
-      </FormGroup>
+      ? (
+        <FormGroup controlId='tags'>
+          <Col xs={12} sm={3} lg={2}>
+            <ControlLabel>Tags</ControlLabel>
+          </Col>
+          <Col xs={12} sm={9} lg={8}>
+            <TagSelect
+              ref='tags'
+              label='Tags'
+              {...this.props}
+              value={this.state.tags}
+              onChange={this.handleTagsChange}
+              filterOptions={this.filterOptions}
+            />
+          </Col>
+        </FormGroup>
+      )
       : '')
 
     return (
@@ -223,7 +225,7 @@ var AssessmentCreationForm = createReactClass({
               ref='template'
               {...this.props}
               value={this.state.template}
-              onChange={this.changeHandlerTemplate}
+              onChange={this.handleChangeTemplate}
             />
           </Col>
         </FormGroup>

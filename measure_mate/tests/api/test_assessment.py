@@ -2,7 +2,6 @@ import datetime
 
 from django.contrib.auth.models import User
 from django.urls import reverse
-from django.utils import six
 from rest_framework import status
 from rest_framework.test import APITestCase
 
@@ -183,4 +182,4 @@ class AssessmentAPITestCases(APITestCase):
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         self.assertEqual(response.data['id'], data['id'])
         self.assertEqual(len(response.data['tags']), 2)
-        six.assertCountEqual(self, response.data['tags'], [tag1.id, tag3.id])
+        self.assertCountEqual(response.data['tags'], [tag1.id, tag3.id])

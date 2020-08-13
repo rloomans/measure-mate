@@ -4,12 +4,11 @@ Measure Mate
 Dev Central
 -----------
 
-[![Build Status](https://travis-ci.org/mvillis/measure-mate.svg)](https://travis-ci.org/mvillis/measure-mate)
-[![Coverage Status](https://coveralls.io/repos/mvillis/measure-mate/badge.svg?branch=master&service=github)](https://coveralls.io/github/mvillis/measure-mate?branch=master)
-[![Codecov](https://img.shields.io/codecov/c/github/mvillis/measure-mate/master.svg?maxAge=2592000)](http://codecov.io/github/mvillis/measure-mate?branch=master)
-[![Stories in Progress](https://badge.waffle.io/mvillis/measure-mate.svg?label=in%20progress&title=In%20Progress)](http://waffle.io/mvillis/measure-mate)
+[![Build Status](https://travis-ci.org/rloomans/measure-mate.svg)](https://travis-ci.org/rloomans/measure-mate)
+[![Coverage Status](https://coveralls.io/repos/rloomans/measure-mate/badge.svg?branch=master&service=github)](https://coveralls.io/github/rloomans/measure-mate?branch=master)
+[![Codecov](https://img.shields.io/codecov/c/github/rloomans/measure-mate/master.svg?maxAge=2592000)](http://codecov.io/github/rloomans/measure-mate?branch=master)
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/)
-[![Code Climate](https://codeclimate.com/github/mvillis/measure-mate/badges/gpa.svg)](https://codeclimate.com/github/mvillis/measure-mate)
+[![Code Climate](https://codeclimate.com/github/rloomans/measure-mate/badges/gpa.svg)](https://codeclimate.com/github/rloomans/measure-mate)
 
 Demo
 ----
@@ -208,5 +207,5 @@ Contributing
 ------------
 
 Please read
-[CONTRIBUTING.md](https://github.com/mvillis/measure-mate/blob/master/CONTRIBUTING.md)
+[CONTRIBUTING.md](CONTRIBUTING.md)
 if you wish to contribute.
