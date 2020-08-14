@@ -55,7 +55,7 @@
     "history": "^5.0.0",
     "http-status-codes": "^1.4.0",
     "jquery": "^3.5.1",
-    "lodash": "^4.17.19",
+    "lodash": "^4.17.20",
     "minimist": "^1.2.5",
     "moment": "^2.27.0",
     "plotly.js": "^1.54.7",
