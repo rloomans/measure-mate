@@ -114,7 +114,7 @@
     "stylelint": "^13.7.2",
     "stylelint-config-standard": "^20.0.0",
     "watchify": "^3.11.1",
-    "xmldom": "^0.3.0"
+    "xmldom": "^0.4.0"
   },
   "resolutions": {
     "eslint": "7.12.1"
