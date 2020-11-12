@@ -90,7 +90,7 @@
     "enzyme": "^2.9.1",
     "eslint": "^7.13.0",
     "eslint-config-standard": "^16.0.1",
-    "eslint-config-standard-jsx": "^8.1.0",
+    "eslint-config-standard-jsx": "^10.0.0",
     "eslint-config-standard-react": "^11.0.1",
     "eslint-plugin-chai-friendly": "^0.6.0",
     "eslint-plugin-import": "^2.22.1",
