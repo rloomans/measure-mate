@@ -11010,12 +11010,12 @@ react-redirect@^1.0.0:
   dependencies:
     react-side-effect "~0.3.0"
 
-react-router-bootstrap@^0.23.3:
-  version "0.23.3"
-  resolved "https://registry.yarnpkg.com/react-router-bootstrap/-/react-router-bootstrap-0.23.3.tgz#970c35c53c04c61fb6b110d4ff651a7e8a73b2ba"
-  integrity sha1-lww1xTwExh+2sRDU/2Uafopzsro=
+react-router-bootstrap@^0.25.0:
+  version "0.25.0"
+  resolved "https://registry.yarnpkg.com/react-router-bootstrap/-/react-router-bootstrap-0.25.0.tgz#5d1a99b5b8a2016c011fc46019d2397e563ce0df"
+  integrity sha512-/22eqxjn6Zv5fvY2rZHn57SKmjmJfK7xzJ6/G1OgxAjLtKVfWgV5sn41W2yiqzbtV5eE4/i4LeDLBGYTqx7jbA==
   dependencies:
-    prop-types "^15.5.8"
+    prop-types "^15.5.10"
 
 react-router@3.2.6:
   version "3.2.6"
