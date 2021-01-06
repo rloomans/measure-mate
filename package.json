@@ -58,7 +58,7 @@
     "lodash": "^4.17.20",
     "minimist": "^1.2.5",
     "moment": "^2.29.1",
-    "plotly.js": "^1.58.2",
+    "plotly.js": "^1.58.4",
     "prop-types": "^15.7.2",
     "react": "^15.7.0",
     "react-bootstrap": "^0.31.5",
@@ -74,7 +74,7 @@
     "react-select": "^1.2.1",
     "require-dir": "^1.2.0",
     "semver": "^7.3.4",
-    "snyk": "^1.437.1",
+    "snyk": "^1.437.3",
     "tablesort": "^5.2.1",
     "through2": "^4.0.2",
     "vinyl-buffer": "^1.0.0",
@@ -88,7 +88,7 @@
     "chai": "^4.2.0",
     "coveralls": "^3.1.0",
     "enzyme": "^2.9.1",
-    "eslint": "^7.15.0",
+    "eslint": "^7.17.0",
     "eslint-config-standard": "^16.0.2",
     "eslint-config-standard-jsx": "^10.0.0",
     "eslint-config-standard-react": "^11.0.1",
@@ -96,7 +96,7 @@
     "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^4.2.1",
-    "eslint-plugin-react": "^7.21.5",
+    "eslint-plugin-react": "^7.22.0",
     "eslint-plugin-standard": "^5.0.0",
     "gulp-babel": "^7.0.1",
     "gulp-babel-istanbul": "^1.6.0",
@@ -117,7 +117,7 @@
     "xmldom": "^0.4.0"
   },
   "resolutions": {
-    "eslint": "7.15.0"
+    "eslint": "7.17.0"
   },
   "snyk": true
 }
